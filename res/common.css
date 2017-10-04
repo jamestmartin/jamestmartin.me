@@ -1,15 +1,51 @@
-.metadata {
-  font-size: 15px;
-}
-
-.metadata img {
-  width: 15px;
-}
-
 body {
     display: block;
+    margin: 0;
     font-family: sans-serif;
-  margin: 0;
+}
+
+nav {
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #404040;
+}
+
+#navbrand {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+}
+
+article {
+    margin: auto;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+    font-size: 18px;
+    color: #303030;
+}
+
+p {
+    text-align: justify;
+    text-justify: distribute;
+    text-indent: 4em;
+}
+
+article h1 {
+   font-size: 30px;
+}
+
+article h2 {
+  font-size: 25px;
+}
+
+article h3 {
+  font-size: 20px;
 }
 
 a {
@@ -21,19 +57,28 @@ a:hover {
     color: #8080A0;
 }
 
-nav {
-    max-width: 15%;
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: #404040;
-    float: left;
-    padding: 40px;
-    padding-right: 45px;
-    padding-top: 20px;
-    margin-top: 10px;
-    border-style: solid;
-    border-width: 0 3px 0 0;
+nav a {
+    color: inherit;
+}
+
+.quote-content::before {
+    content: url("/res/icon/double-quote-serif-left.svg");
+}
+
+.quote-content {
+    font-style: italic;
+}
+
+.quote-content::after {
+    content: url("/res/icon/double-quote-serif-right.svg");
+}
+
+.metadata {
+  font-size: 15px;
+}
+
+.metadata img {
+  width: 15px;
 }
 
 footer {
@@ -49,132 +94,75 @@ footer {
     vertical-align: bottom;
 }
 
-nav a {
-   color: inherit;
-}
-
-nav span {
-    font-weight: bold;
-    padding-left: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin-left: 20px;
-}
-
-nav ul li {
-   border-bottom: 1px solid #ccc;
-   padding: 3px;
-}
-
-nav ul li:last-child {
-   border-bottom: none;
-}
-
-@media screen and (max-width: 500px) {
- article{
-   min-width: 0em !important;
-}
+@media screen and (max-width: 600px) {
+    article {
+	padding: 5px;
+	margin: 0;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-  nav {
-   text-align: center;
-   margin: auto;
-   float: none;
-   padding: 0;
-   border: none;
-   max-width: 100%;
-  }
-  nav ul, nav li {
-    padding: 0;
-    list-style: none !important;
-    border: none !important;
-  } 
-  nav li {
-    margin: 0;
-    float: center;;
-    display: inline-block;
-  }
-}
+    nav {
+	margin: auto;
+	padding: 0;
+	text-align: center;
+    }
 
-@media screen and (max-width: 600px) {
+    nav ul {
+	padding: 0;
+    }
 
-article {
-padding: 5px !important;
-margin: 0 !important;
-}
-}
-
-#navbrand {
-    font-size: 50px;
-    color: black;
-    font-style: italic;
-}
-
-article {
-    color: #303030;
-    line-height: 1.5em;
-    letter-spacing: .05em;
-    font-family: sans-serif;
-    font-size: 18px;
-    margin: auto;
-    padding: 30px 80px;
-    min-width: 25em;
-    max-width: 30em;
-}
-
-#content {
-   min-width: 50%;
-}
-
-@media screen and (min-width: 1200px) {
-.aside {
-   max-width: 50%;
-   position: relative;
-   left: 60%;
-   float: right;
-   display: inline;
-   margin-left: -50%;
-}
-}
-
-.quote-content {
-  font-style: italic;
-}
-
-.quote-content::before {
-  content: url("/res/icon/double-quote-serif-left.svg");
-}
-
-.quote-content::after {
-  content: url("/res/icon/double-quote-serif-right.svg");
-}
-
-p {
-    text-align: justify;
-    text-justify: distribute;
-    text-indent: 4em;
-}
-
-article h1 {
-   font-size: 30px;
+    nav li {
+	margin: 0;
+	display: inline-block;
+    }
 }
 
 @media screen and (min-width: 700px) {
- article h1 {
-   margin-left: -20px;
- }
+    article {
+	padding: 30px 80px;
+	min-width: 25em;
+	max-width: 30em;
+    }
+    
+    article h1 {
+	margin-left: -20px;
+    }
 }
 
-article h2 {
-  font-size: 25px;
+@media screen and (min-width: 1200px) {
+    nav {
+	max-width: 15%;
+	float: left;
+	padding: 20px 45px 40px 40px;
+	margin-top: 10px;
+	border-left: 3px solid;
+    }
+    
+    nav span {
+	padding-left: 20px;
+    }
+
+    nav ul {
+	margin-left: 20px;
+    }
+
+    nav li {
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+    }
+
+    nav ul li:last-child {
+	border-bottom: none;
+    }
+    
+    .aside {
+	position: relative;
+	left: 60%;
+	float: right;
+	margin-left: 50%;
+	max-width: 50%;
+    }
 }
 
-article h3 {
-  font-size: 20px;
-}
 
-article h1, h2, h3, h4, h5 {
-}
