@@ -1,0 +1,27 @@
+module SitemapXml where
+
+type Sitemap = [UrlData]
+
+data ChangeFreq = CFNever
+                | CFYearly
+                | CFMonthly
+                | CFWeekly
+                | CFDaily
+                | CFHourly
+                | CFAlways
+
+instance Show ChangeFreq where
+  show CFNever = "never"
+  show CFYearly = "yearly"
+  show CFMonthly = "monthly"
+  show CFWeekly = "weekly"
+  show CFDaily = "daily"
+  show CFHourly = "hourly"
+  show CFAlways = "always"
+
+data UrlData = UrlData
+  { url :: String
+  , lastMod :: Maybe String
+  , changeFreq :: ChangeFreq
+  , priority :: Priority
+  }
