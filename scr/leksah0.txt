@@ -1,0 +1,142 @@
+lijero@desktop:~/build/leksah$ stack exec --no-ghc-package-path leksah
+Using default Yi configuration
+Linked with -threaded
+Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+Reading keymap from /home/lijero/build/leksah/.stack-work/install/x86_64-linux-nopie/lts-9.9/8.0.2/share/x86_64-linux-ghc-8.0.2/leksah-0.16.3.1/data/keymap.lkshk
+Error reading session file /home/lijero/build/leksah/.stack-work/install/x86_64-linux-nopie/lts-9.9/8.0.2/share/x86_64-linux-ghc-8.0.2/leksah-0.16.3.1/data/current.lkshs : Error reading file "/home/lijero/build/leksah/.stack-work/install/x86_64-linux-nopie/lts-9.9/8.0.2/share/x86_64-linux-ghc-8.0.2/leksah-0.16.3.1/data/current.lkshs" "/home/lijero/build/leksah/.stack-work/install/x86_64-linux-nopie/lts-9.9/8.0.2/share/x86_64-linux-ghc-8.0.2/leksah-0.16.3.1/data/current.lkshs" (line 12, column 23):
+unexpected read parser no parse Nothing
+expecting field parser
+CallStack (from HasCallStack):
+  error, called at src/Text/PrinterParser.hs:284:28 in ltk-0.16.2.0-20pNDZSt43Z2Dmg2j8UhX4:Text.PrinterParser
+update workspace info called
+Could not retrieve vcs-conf for active package. No vcs-conf set up.
+update workspace info called
+Now updating system metadata ...
+callCollector
+setChildren [0,0]
+setChildren [1,0]
+setChildren [0,0]
+setChildren [1,0]
+***server start
+Bind 127.0.0.1:11111
+Metadata collector has nothing to do
+Metadata collection has finished
+callCollector finished
+Finished updating system metadata
+Now loading metadata ...
+now loading metadata for package Cabal-1.24.2.0
+now loading metadata for package Cabal-2.0.1.1
+now loading metadata for package array-0.5.1.1
+now loading metadata for package base-4.9.1.0
+now loading metadata for package binary-0.8.3.0
+now loading metadata for package bytestring-0.10.8.1
+now loading metadata for package containers-0.5.7.1
+now loading metadata for package deepseq-1.4.2.0
+now loading metadata for package directory-1.3.0.0
+now loading metadata for package filepath-1.4.1.1
+now loading metadata for package ghc-8.0.2
+now loading metadata for package ghc-boot-8.0.2
+now loading metadata for package ghc-boot-th-8.0.2
+now loading metadata for package ghc-prim-0.5.0.0
+now loading metadata for package ghci-8.0.2
+now loading metadata for package haskeline-0.7.3.0
+now loading metadata for package hoopl-3.10.2.1
+now loading metadata for package hpc-0.6.0.3
+now loading metadata for package integer-gmp-1.0.0.1
+now loading metadata for package pretty-1.1.3.3
+now loading metadata for package process-1.4.3.0
+now loading metadata for package rts-1.0
+now loading metadata for package template-haskell-2.11.1.0
+now loading metadata for package terminfo-0.4.0.2
+now loading metadata for package time-1.6.0.1
+now loading metadata for package transformers-0.5.2.0
+now loading metadata for package unix-2.7.2.1
+now loading metadata for package xhtml-3000.2.1
+Finished loading metadata
+Now updating workspace metadata ...
+updatePackageInfo False PackageIdentifier {pkgName = PackageName {unPackageName = "leksah-welcome"}, pkgVersion = Version {versionBranch = [0,16,0,0], versionTags = []}}
+updatePackageInfo modToUpdate ["Main (/home/lijero/.leksah-0.16/leksah-welcome/src/Main.hs)","Main (/home/lijero/.leksah-0.16/leksah-welcome/test/Main.hs)"]
+callCollectorWorkspace
+callCollectorWorkspace finished
+Finished updating workspace metadata
+setChildren [1,0]
+setChildren [1,0,0]
+setChildren [1,0]
+setChildren [1,0]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2,0]
+setChildren [1,0,2]
+setChildren [1,0,2,1]
+setChildren [1,0,2]
+setChildren [1,0,2,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [0,0]
+setChildren [0,0,0]
+setChildren [0,0]
+setChildren [0,0]
+setChildren [0,0,2]
+setChildren [0,0]
+setChildren [0,0,0]
+setChildren [0,0]
+setChildren [0,0]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2,0]
+setChildren [0,0,2]
+setChildren [0,0,2,1]
+setChildren [0,0,2]
+setChildren [0,0,2,2]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2,0]
+setChildren [1,0,2]
+setChildren [1,0,2,1]
+setChildren [1,0,2]
+setChildren [1,0,2,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [0,0]
+setChildren [0,0,0]
+setChildren [0,0]
+setChildren [0,0]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2,0]
+setChildren [0,0,2]
+setChildren [0,0,2,1]
+setChildren [0,0,2]
+setChildren [0,0,2,2]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2]
+setChildren [0,0,2,1]
+setChildren [1,0]
+setChildren [1,0,0]
+setChildren [1,0]
+setChildren [1,0]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2,0]
+setChildren [1,0,2]
+setChildren [1,0,2,1]
+setChildren [1,0,2]
+setChildren [1,0,2,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2]
+setChildren [1,0,2,1]
+^C***lost connection
+***lost last connection - exiting
+^C
