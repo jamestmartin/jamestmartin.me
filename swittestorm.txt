@@ -1,0 +1,27 @@
+* Highly parallel processing-- distribute code over CPU cores, GPU cores, or computers on a network-- completely transparently.
+* Free networked programs-- location-agnostic code can be run anywhere or everywhere, and multi-user systems via a multi-entry point program.
+* Streamable computations-- computation can begin even when not all of the data has arrived yet.
+* High performance-- simple and fast computations on CPU or GPU, easy to compile.
+* Hard real-time, strict determinism-- extremely simple program semantics and implementation allow making very strong guarantees, including precise computation times and results.
+* Secure-- deterministic and provable program behavior allows trivially creating secure subsets of the language.
+* High-quality debugging tools-- the compiler is aware of a large amount of metadata for generating messages, and program images allow easy reproducibility/analysis.
+* Portability-- no programming language behavior is platform-dependent, so only calls to native libraries are platform-dependent.
+* Provable correctness-- everything else not good enough for you? prove your programs correct using the formal semantics.
+* Low- or high-level-- the programming language depends on virtually no runtime (just malloc), not even a garbage collector, and would be suitable for writing OS-level code wherever C would be. In fact, it could be feasible to implement Switte as a CPU instruction set.
+* High-quality type inference-- strongly and statically typed, but you'd never know it.
+* Code inference-- built-in proof helper can automatically infer your code based on its type.
+* Highly granular versioning-- hash and graph-based version control applies not just to libraries, but individual functions and types. This could theoretically be used for a completely decentralized/distributed package manager.
+* High-quality documentation-- every aspect is formally specified and explained for academics, developers, or laymen, such that anyone can learn it.
+* Extreme simplicity-- a very small yet complete set of primitives and virtually no syntax makes learning or porting it easy.
+* Extensibility-- if you don't appreciate the simplicity, you can simply encode your favorite syntax or language structures directly into the language.
+* Mathematician- and logician-suitable-- basis in a very general type theory makes it suitable for mathematicians (though unfortunately it is not Homotopy-based)
+* Linguist-suitable-- the Lambek fragment is suitable for describing categorical grammars
+* Staticstics interpretation-- the non-associative fragment corresponds with concepts in statistics.
+* Programmer-suitable-- if you don't care about all that stuff, the full fragment is Turing-complete and a suitable programming language.
+* Native literate programming support
+* Rich code editing-- textual source code is possible but unneccessary. Compiled code and source code are essentially equivalent, so between the instruction set and hash-graph VCS, it is possible to interact with code entirely non-textually.
+* Eager or lazy?-- irrelevant! Switte's linear semantics make evaluation strategy definitionally irrelevant. In other words, Switte is strongly normalizing (with a few exceptions related to the full fragment).
+* Stateless-- dump a running program and restart it anywhere. You might even argue that all Switte programs are always running, in a sense.
+* Flatness-- Switte has no syntax, and therefore arbitrary partitions of programs are equivalent.
+* Simplicity-- a very small set of primitives and no syntax.
+* Derived from type theory-- clear formal semantics makes it easy for both humans and compilers to reason about programs.

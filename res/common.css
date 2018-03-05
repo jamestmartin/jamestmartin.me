@@ -136,3 +136,8 @@ nav li {
 	margin-left: -20px;
     }
 }
+
+pre {
+    font-size: 16px;
+    padding-left: 2em;
+}

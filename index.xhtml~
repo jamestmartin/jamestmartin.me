@@ -17,8 +17,6 @@
     <link href="/favicon.png" rel="icon" type="image/png" />
     <link href="/res/common.css" rel="stylesheet" type="text/css" />
 
-    <meta http-equiv="refresh" content="5; url=https://lijero.co/switte/" />
-
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -44,8 +42,7 @@
     <header>
       <h1>Home Page</h1>
     </header>
-    <p>Sorry! This site is under construction.</p>
-    <p>In the mean time, here's a redirect to <a href="/switte/">the Switte Programming Language</a></p>
+    <p>Sorry! This site is under construction. It should be up by the end of March, so consider checking back then.</p>
     </article>
   </body>
 </html>

@@ -18,6 +18,10 @@ nav {
     font-style: italic;
 }
 
+nav li {
+    text-indent: 0;
+}
+
 nav ul {
     list-style: none;
 }
@@ -33,7 +37,7 @@ article {
 p {
 /*    text-align: justify;
     text-justify: distribute;*/
-    text-indent: 4em;
+    text-indent: 2em;
 }
 
 article h1 {
@@ -106,66 +110,29 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    nav {
-	margin: auto;
-	padding: 0;
-	text-align: center;
-    }
+nav {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
 
-    nav ul {
-	padding: 0;
-    }
+nav ul {
+    padding: 0;
+}
 
-    nav li {
-	margin: 0;
-	display: inline-block;
-    }
+nav li {
+    margin: 0;
+    display: inline-block;
 }
 
 @media screen and (min-width: 700px) {
     article {
-	padding: 30px 80px;
+	padding: 0 80px;
 	min-width: 25em;
-	max-width: 30em;
+	max-width: 33em;
     }
     
     article h1 {
 	margin-left: -20px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    nav {
-	max-width: 15%;
-	float: left;
-	padding: 20px 45px 40px 40px;
-	margin-top: 10px;
-	border-right: 3px solid;
-    }
-    
-    nav span {
-	padding-left: 20px;
-    }
-
-    nav ul {
-	margin-left: 20px;
-    }
-
-    nav li {
-	border-bottom: 1px solid #ccc;
-	padding: 3px;
-    }
-
-    nav ul li:last-child {
-	border-bottom: none;
-    }
-    
-    .aside {
-	position: relative;
-	left: 60%;
-	float: right;
-	margin-left: -50%;
-	max-width: 50%;
     }
 }
