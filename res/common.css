@@ -1,47 +1,57 @@
 body {
-    display: block;
-    margin: 0;
-    font-family: sans-serif;
+  display: block;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 nav {
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: #404040;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #404040;
+  margin: auto;
+  padding: 0;
+  text-align: center;
 }
 
 #navbrand {
-    font-weight: bold;
-    font-size: 50px;
-    color: black;
-    font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  font-style: italic;
 }
 
 nav li {
-    text-indent: 0;
+  text-indent: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0;
+  display: inline-block;
 }
 
 nav ul {
-    list-style: none;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: inherit;
 }
 
 article {
-    margin: auto;
-    line-height: 1.5em;
-    letter-spacing: .05em;
-    font-size: 18px;
-    color: #303030;
+  margin: auto;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+  font-size: 18px;
+  color: #303030;
 }
 
 p {
-/*    text-align: justify;
-    text-justify: distribute;*/
-    text-indent: 2em;
+  text-indent: 2em;
 }
 
 article h1 {
-   font-size: 30px;
+  font-size: 30px;
 }
 
 article h2 {
@@ -53,32 +63,28 @@ article h3 {
 }
 
 li {
-    text-indent: 1em;
+  text-indent: 1em;
 }
 
 a {
-    text-decoration: none;
-    color: #5050B0;
+  text-decoration: none;
+  color: #5050B0;
 }
 
 a:hover {
-    color: #8080A0;
-}
-
-nav a {
-    color: inherit;
+  color: #8080A0;
 }
 
 .quote-content::before {
-    content: url("/res/icon/double-quote-serif-left.svg");
+  content: url("/res/icon/double-quote-serif-left.svg");
 }
 
 .quote-content {
-    font-style: italic;
+  font-style: italic;
 }
 
 .quote-content::after {
-    content: url("/res/icon/double-quote-serif-right.svg");
+  content: url("/res/icon/double-quote-serif-right.svg");
 }
 
 .metadata {
@@ -90,54 +96,39 @@ nav a {
 }
 
 footer {
-   padding: 10px;
-   font-size: 10px;
-   position: relative;
-   bottom: 0;
-   text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
 }
 
 .license img {
-    display: inline-block;
-    width: initial;
-    vertical-align: bottom;
+  display: inline-block;
+  width: initial;
+  vertical-align: bottom;
 }
 
 @media screen and (max-width: 600px) {
-    article {
-	padding: 5px;
-	margin: 0;
-    }
-}
-
-nav {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav li {
+  article {
+    padding: 5px;
     margin: 0;
-    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 700px) {
-    article {
-	padding: 0 80px;
-	min-width: 25em;
-	max-width: 33em;
-    }
-    
-    article h1 {
-	margin-left: -20px;
-    }
+  article {
+    padding: 0 80px;
+    min-width: 25em;
+    max-width: 33em;
+  }
+  
+  article h1 {
+    margin-left: -20px;
+  }
 }
 
 pre {
-    font-size: 16px;
-    padding-left: 2em;
+  font-size: 16px;
+  padding-left: 2em;
 }
