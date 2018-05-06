@@ -1,10 +1,13 @@
-module Templates where
+module Templates
+  ( module Templates
+  , module Templates.Urls
+  , module Templates.Icons
+  ) where
 
 import Templates.Urls
 import Templates.Icons
 
-import HtmlGen.Html
-import HtmlGen.Tags
+import HtmlGen
 
 basePage :: String -> String -> Html -> Html
 basePage pageTitle authorName content =
@@ -26,7 +29,7 @@ navSection =
   %> (spanTag `withId` "navbrand" %>> "Lijero")
   %> unorderedList
          [ href baseUrl $ text "Home"
-         , href qiplUrl $ text "Qipl"
+         , href projectsUrl $ text "Projects"
          , href aboutUrl $ text "About"
          ]
 
@@ -36,11 +39,11 @@ footerSection authorName dateModified =
   %> (divTag `withClass` "metadata"
      %> (spanTag
          %> authorIcon
-         %>> ' ' : authorName
+         %>> ' ' : authorName ++ " "
         )
      %> (spanTag
         %> updatedIcon
-        %>> ' ' : dateModified
+        %>> ' ' : dateModified ++ " "
         )
      %> license
      )

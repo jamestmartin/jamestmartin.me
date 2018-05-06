@@ -2,15 +2,19 @@ module Page where
 
 import Templates
 
-import HtmlGen.Html
-import HtmlGen.Tags
-import HtmlGen.Sitemap
+import HtmlGen
+
+lastModified :: String
+lastModified = "2018-05-05"
 
 sitemap :: Sitemap
-sitemap = baseSitemap "https://lijero.co/index.xhtml" `withLastMod` "2018-05-05"
+sitemap = baseSitemap "https://lijero.co/index.xhtml"
+  `withLastMod` lastModified
+  `withPriority` "1.0"
+  `withChangeFreq` "weekly"
 
 page :: Html
-page = simplePage "Lijero" "Lijero" "2018-05-05" $
+page = simplePage "Lijero" "Lijero" lastModified $
   article
   %> (h1 %>> "Home Page")
   %> (p %>> "Sorry! This site is currently under construction.")

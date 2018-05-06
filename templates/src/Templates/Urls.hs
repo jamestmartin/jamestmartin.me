@@ -1,7 +1,7 @@
 module Templates.Urls where
 
 baseUrl :: String
-baseUrl = "//lijero.co/"
+baseUrl = "https://lijero.co/"
 
 resUrl :: String
 resUrl = baseUrl ++ "res/"
@@ -15,8 +15,23 @@ ccbysaUrl = "http://creativecommons.org/licenses/by-sa/4.0/"
 stylesheetCommonUrl :: String
 stylesheetCommonUrl = resUrl ++ "common.css"
 
-qiplUrl :: String
-qiplUrl = baseUrl ++ "qipl/"
+projectsUrl :: String
+projectsUrl = baseUrl ++ "projects/"
 
 aboutUrl :: String
 aboutUrl = baseUrl ++ "about/"
+
+githubUrl :: String
+githubUrl = "https://github.com/"
+
+githubUserUrl :: String
+githubUserUrl = githubUrl ++ "LijeroM/"
+
+githubProjectUrl :: String -> String
+githubProjectUrl name = githubUserUrl ++ name ++ "/"
+
+githubQiplUrl :: String
+githubQiplUrl = githubUrl ++ "qipl/"
+
+githubQiplProjectUrl :: String -> String
+githubQiplProjectUrl name = githubQiplUrl ++ name ++ "/"
