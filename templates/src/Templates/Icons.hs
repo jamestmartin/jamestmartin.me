@@ -43,3 +43,42 @@ faviconMime = "image/png"
 
 faviconLink :: Html
 faviconLink = favicon faviconUrl faviconMime
+
+accountIconClass :: (String, String)
+accountIconClass = ("class", "accounticon")
+
+githubMarkUrl :: String
+githubMarkUrl = iconUrl ++ "github-mark-100px.png"
+
+githubMark :: Html
+githubMark = img "GitHub" githubMarkUrl %% accountIconClass
+
+linkedinLogoUrl :: String
+linkedinLogoUrl = iconUrl ++ "linkedin-logo-100px.png"
+
+linkedinLogo :: Html
+linkedinLogo = img "LinkedIn" linkedinLogoUrl %% accountIconClass
+
+redditLogoUrl :: String
+redditLogoUrl = iconUrl ++ "reddit-logo-100px.png"
+
+redditLogo :: Html
+redditLogo = img "Reddit" redditLogoUrl %% accountIconClass
+
+wikipediaLogoUrl :: String
+wikipediaLogoUrl = iconUrl ++ "wikipedia-logo-100px.png"
+
+wikipediaLogo :: Html
+wikipediaLogo = img "Wikipedia" wikipediaLogoUrl %% accountIconClass
+
+youtubeLogoUrl :: String
+youtubeLogoUrl = iconUrl ++ "youtube-logo-100px.jpeg"
+
+youtubeLogo :: Html
+youtubeLogo = img "Youtube" youtubeLogoUrl %% accountIconClass
+
+freenodeLogoUrl :: String
+freenodeLogoUrl = iconUrl ++ "freenode-logo.svg"
+
+freenodeLogo :: Html
+freenodeLogo = img "Freenode" freenodeLogoUrl %% accountIconClass

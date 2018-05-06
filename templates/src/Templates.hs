@@ -20,13 +20,14 @@ basePage pageTitle authorName content =
        %> faviconLink
        %> (title %>> pageTitle)
        %> viewport
+       %> (newTag "script" %% ("async", "async") %% ("type", "text/javascript") %% ("src", resUrl ++ "common.js"))
        )
     %> content
 
 navSection :: Html
 navSection =
   nav
-  %> (spanTag `withId` "navbrand" %>> "Lijero")
+  %> (spanTag `withId` "navbrand" %> ((href baseUrl $ text "Lijero") %% ("class", "navbrand")))
   %> unorderedList
          [ href baseUrl $ text "Home"
          , href projectsUrl $ text "Projects"

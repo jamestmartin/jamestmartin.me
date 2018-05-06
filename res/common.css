@@ -75,6 +75,16 @@ a:hover {
   color: #8080A0;
 }
 
+.accounticon {
+  height: 100px;
+  padding: 10px;
+}
+
+.current-link:not(.navbrand) {
+  color: #505070;
+  border-bottom-style: solid;
+}
+
 .quote-content::before {
   content: url("/res/icon/double-quote-serif-left.svg");
 }
