@@ -20,7 +20,7 @@ basePage pageTitle authorName content =
        %> faviconLink
        %> (title %>> pageTitle)
        %> viewport
-       %> (newTag "script" %% ("async", "async") %% ("type", "text/javascript") %% ("src", resUrl ++ "common.js"))
+       %> (newTag "script" %% ("async", "async") %% ("src", resUrl ++ "common.js"))
        )
     %> content
 

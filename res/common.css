@@ -51,6 +51,7 @@ p {
 }
 
 article h1 {
+  text-align: center;
   font-size: 30px;
 }
 
@@ -131,10 +132,6 @@ footer {
     padding: 0 80px;
     min-width: 25em;
     max-width: 33em;
-  }
-  
-  article h1 {
-    margin-left: -20px;
   }
 }
 
