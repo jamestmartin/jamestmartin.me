@@ -27,7 +27,7 @@ basePage pageTitle authorName content =
 navSection :: Html
 navSection =
   nav
-  %> (spanTag `withId` "navbrand" %> ((href baseUrl $ text "Lijero") %% ("class", "navbrand")))
+  %> (spanTag `withId` "navbrand" %> ((href baseUrl $ text "James Martin") %% ("class", "navbrand")))
   %> unorderedList
          [ href baseUrl $ text "Home"
          , href projectsUrl $ text "Projects"

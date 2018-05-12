@@ -1,7 +1,7 @@
 module Templates.Urls where
 
 baseUrl :: String
-baseUrl = "https://lijero.co/"
+baseUrl = "https://jtmar.me/"
 
 resUrl :: String
 resUrl = baseUrl ++ "res/"

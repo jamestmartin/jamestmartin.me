@@ -4,7 +4,7 @@ import HtmlGen
 import Templates
 
 lastModified :: String
-lastModified = "2018-05-05"
+lastModified = "2018-05-11"
 
 sitemap :: Sitemap
 sitemap = baseSitemap projectsUrl
@@ -13,7 +13,7 @@ sitemap = baseSitemap projectsUrl
   `withChangeFreq` "weekly"
 
 page :: Html
-page = simplePage "Lijero's Projects" "Lijero" lastModified $
+page = simplePage "James's Projects" "James" lastModified $
   article
   %> (h1 %>> "Projects")
   %> (h2 %>> "Programming")
@@ -28,7 +28,7 @@ page = simplePage "Lijero's Projects" "Lijero" lastModified $
      )
   %> (h2 %>> "Audiobooks")
   %> (p
-     %>> "I am currently working on recording The Grapes of Wrath for my English teacher"
+     %>> "I am currently working on recording The Grapes of Wrath for my English teacher "
      %>> "due to a lack of quality recordings of it. You may find that series in "
      %> (href (baseUrl ++ "gow/") $ text "its YouTube playlist")
      %>> "."

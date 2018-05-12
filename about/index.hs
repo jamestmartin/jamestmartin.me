@@ -4,7 +4,7 @@ import HtmlGen
 import Templates
 
 lastModified :: String
-lastModified = "2018-05-06"
+lastModified = "2018-05-11"
 
 sitemap :: Sitemap
 sitemap = baseSitemap aboutUrl
@@ -13,11 +13,12 @@ sitemap = baseSitemap aboutUrl
   `withChangeFreq` "weekly"
 
 page :: Html
-page = simplePage "About Lijero" "Lijero" lastModified $
+page = simplePage "About James" "James" lastModified $
   article
   %> (h1 %>> "About")
+  %> (h2 %>> "Hello,")
   %> (p
-      %>> "Hi! I'm James Martin, a student at Hazen High School with an insatiable love of learning. "
+      %>> "I'm James Martin, a student at Hazen High School with an insatiable love of learning. "
       %>> "Right now I'm working on a " %> (href githubQiplUrl $ text "fully reversible programming language")
       %>> ", and actively studying " %> (href "https://homotopytypetheory.org/" $ text "homotopy type theory") %>> "."
      )
@@ -35,54 +36,52 @@ page = simplePage "About Lijero" "Lijero" lastModified $
      %>> "a crystal-clear alpine lake, "
      %>> "or a challenging slope covered in fresh powder."
      )
-  %> (h2 %>> "Hobbies")
+  %> (h2 %>> "Hobbies" %% ("id", "hobbies"))
   %> (h3 %>> "Programming")
   %> (p
      %>> "Obviously, I'm a programmer. "
-     %>> "Aside from the aforementioned programming language and this website, "
-     %>> "I've written a Minecraft clone, platformer games, HTTP and IRC servers, "
-     %>> "other programming languages, and similar things."
+     %>> "Aside from the programming language and this website, "
+     %>> "I've written various games, servers for common protocols, "
+     %>> "other programming languages, and other things."
      )
   %> (p
      %>> "I've researched operating systems and CPUs, "
-     %>> "though I never got far in implementing either. "
-     %>> "I sure learned a lot in the process, though! "
-     %>> "I did actually implement a CPU in Minecraft once, "
-     %>> "though I don't think that really counts."
+     %>> "learning a lot in the process, "
+     %>> "though I never got far in constructing either. "
+     %>> "However, I implement a CPU in Minecraft once."
      )
   %> (p
-     %>> "Once upon a time I also ran a fairly popular Minecraft server, "
-     %>> "most gameplay features of which were custom coded. "
-     %>> "That said, I was eleven, which was not exactly my prime. "
+     %>> "Speaking of Minecraft, I used to run a fairly popular server, "
+     %>> "based on thousands of lines of custom content. "
+     %>> "That said, I was eleven, and it was a.. "
+     %>> "learning experience, the whole way through."
      )
   %> (h3 %>> "Conlanging")
   %> (p
-     %>> "Conlanging is the art of artificial language construction. "
-     %>> "It's a lot of fun, because it's at the perfect intersection "
-     %>> "of creative and technical. "
+     %>> "Conlanging is the art of artificial language construction, "
+     %>> "at the perfect intersection of creative and technical. "
      %>> "It's also given me a reasonable linguistics background."
      )
   %> (p
      %>> "There's also Worldbuilding, "
      %>> "immersing yourself in entire new worlds for fun and profit. "
-     %>> "Unfortunately I haven't had as much time recently to do this as I'd like."
+     %>> "Unfortunately it takes more time than I've had recently."
      )
   %> (h3 %>> "Music")
   %> (p
      %>> "Aside from being a trombonist, I have very broad tastes in music. "
-     %>> "I like everything from jazz to glitch funk to rock. "
      %>> "I'm taking AP Music Theory so I can learn to compose my own!"
      )
-  %> (h2 %>> "Things I use")
+  %> (h2 %>> "Things I use" %% ("id", "thingsiuse"))
   %> (h3 %>> "Programming Languages")
-  %> (h4 %>> "The daily drivers")
+  %> (h4 %>> "Daily drivers")
   %> unorderedList
   [ spanTag %> bold "Haskell" %>> ", my go-to language."
   , spanTag %> bold "Agda" %>> ", used for writing proof-carrying code."
   , spanTag %> bold "Java" %>> ", used in Hazen Robotics."
   , spanTag %> bold "HTML" %>> " and " %> bold "CSS" %>> ", for this website."
   ]
-  %> (h4 %>> "Interesting alternatives")
+  %> (h4 %>> "Occasional alternatives")
   %> unorderedList
   [ spanTag %> bold "Racket" %>> ", though usually I prefer Haskell."
   , spanTag %> bold "Rust" %>> ", though I don't write much low-level code."
@@ -116,4 +115,4 @@ page = simplePage "About Lijero" "Lijero" lastModified $
   %> (href "https://webchat.freenode.net/?channels=%23lijero" freenodeLogo)
   %> (href "https://stackexchange.com/users/10815798/james-martin" $ img "James Martin's Stack Exchange profile" "https://stackexchange.com/users/flair/10815798.png" %% accountIconClass)
   %> (h2 %>> "Contact" %% ("id", "contact"))
-  %> (p %>> "You may email me at " %> italic "jtmar@[this website]" %>> " for professional contact or " %> italic "lijero@[this website]" %>> ". I may also be found on Freenode as " %> italic "lijero" %>> ".")
+  %> (p %>> "You may email me at " %> italic "james@[this website]" %>> ". I may also be found on Freenode as " %> italic "lijero" %>> ".")

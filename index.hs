@@ -5,16 +5,16 @@ import Templates
 import HtmlGen
 
 lastModified :: String
-lastModified = "2018-05-06"
+lastModified = "2018-05-11"
 
 sitemap :: Sitemap
-sitemap = baseSitemap "https://lijero.co/"
+sitemap = baseSitemap "https://jtmar.me/"
   `withLastMod` lastModified
   `withPriority` "1.0"
   `withChangeFreq` "weekly"
 
 page :: Html
-page = simplePage "Lijero" "Lijero" lastModified $
+page = simplePage "James Martin" "James" lastModified $
   article
   %> (h1 %>> "Home")
   %> (p

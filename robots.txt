@@ -1,4 +1,3 @@
 User-agent: *
 Disallow:
-Crawl-Delay: 10
 Sitemap: https://lijero.co/sitemap.xml
