@@ -1,6 +1,6 @@
-# lijero.co
+# jtmar.me
 
-This repo contains the entirety of my website, https://lijero.co.
+This repo contains the entirety of my website, https://jtmar.me.
 It is posed in hopes that other people may find my build system useful.
 In addiition, it gives an easy mechanism to submit corrections
 to the content itself, such as fixing typos or minor details.
@@ -30,7 +30,7 @@ and merely use this page as an example.
 First, clone the repo:
 
 ```bash
-git clone --recursive https://github.com/lijerom/lijero.co
+git clone --recursive https://github.com/lijerom/jtmar.me
 ```
 
 The `--recursive` option also fetches the `html-generator` submodule.
@@ -67,7 +67,7 @@ even though the previous working versions of those pages still exist.
 
 The entire website is static,
 so no special server configuration should be neccessary.
-However, you can still find my nginx config in https://github.com/lijerom/lijero.co-config/.
+However, you can still find my nginx config in https://github.com/lijerom/jtmar.me-config/.
 
 ```bash
 ./build-site.sh
