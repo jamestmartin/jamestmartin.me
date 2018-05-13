@@ -35,3 +35,9 @@ githubQiplUrl = githubUrl ++ "qipl/"
 
 githubQiplProjectUrl :: String -> String
 githubQiplProjectUrl name = githubQiplUrl ++ name ++ "/"
+
+resumeUrl :: String
+resumeUrl = baseUrl ++ "resume.pdf"
+
+qiplUrl :: String
+qiplUrl = "https://qipl.org"
