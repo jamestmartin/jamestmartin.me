@@ -27,7 +27,7 @@ ccbysaIconUrl :: String
 ccbysaIconUrl = resUrl ++ "cc-by-sa-small.png"
 
 ccbysaIcon :: Html
-ccbysaIcon = img "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License" ccbysaIconUrl %% ("style", "border-width:0")
+ccbysaIcon = img "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License" ccbysaIconUrl
 
 license :: Html
 license =

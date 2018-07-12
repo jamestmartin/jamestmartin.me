@@ -2,12 +2,12 @@ name:                templates
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/lijerom/lijero.co/
+homepage:            https://github.com/lijerom/jtmar.me
 license:             GPL-3
 --license-file:        LICENSE
-author:              Lijero
-maintainer:          lijero@lijero.co
-copyright:           2018 Lijero
+author:              James Martin
+maintainer:          james@jtmar.me
+copyright:           2018 James Martin
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10

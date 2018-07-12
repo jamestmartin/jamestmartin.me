@@ -21,6 +21,8 @@ basePage pageTitle authorName content =
        %> (title %>> pageTitle)
        %> viewport
        %> (newTag "script" %% ("async", "async") %% ("src", resUrl ++ "common.js"))
+       %> blockAllMixedContent
+       %> cspMeta "default-src 'none'; style-src 'self'; img-src 'self' https://stackexchange.com; script-src 'self';"
        )
     %> content
 
