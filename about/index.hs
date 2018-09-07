@@ -48,6 +48,6 @@ page = simplePage "About James" "James" lastModified $
   %> (h2 %>> "Contact" %% ("id", "contact"))
   %> (p
       %>> "You may email me at " %> italic "james@[this website]" %>> ". "
-      %>> "I may also be found on Freenode as " %> italic "lijero" %>> ". "
+      %>> "I may also be found on Freenode as " %> italic "jtmar" %>> ". "
       %>> "A PDF of my resume may be found " %> href resumeUrl (text "here") %>> "."
      )
