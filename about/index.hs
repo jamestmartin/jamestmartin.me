@@ -4,13 +4,13 @@ import HtmlGen
 import Templates
 
 lastModified :: String
-lastModified = "2018-05-13"
+lastModified = "2018-09-19"
 
 sitemap :: Sitemap
 sitemap = baseSitemap aboutUrl
   `withLastMod` lastModified
   `withPriority` "0.8"
-  `withChangeFreq` "weekly"
+  `withChangeFreq` "monthly"
 
 page :: Html
 page = simplePage "About James" "James" lastModified $
@@ -18,14 +18,20 @@ page = simplePage "About James" "James" lastModified $
   %> (h1 %>> "About")
   %> (h2 %>> "Hello,")
   %> (p
-      %>> "I'm James Martin, a student at Hazen High School with an insatiable love of learning. "
-      %>> "Right now I'm working on a " %> (href githubQiplUrl $ text "fully reversible programming language")
-      %>> ", and actively studying " %> (href "https://homotopytypetheory.org/" $ text "homotopy type theory") %>> "."
+      %>> "I'm James Martin, a student at Hazen High School with an insatiable love of learning, "
+      %>> "programmer, musician, and moderator of "
+      %> (href "https://reddit.com/r/ProgrammingLanguages/" $ text "/r/ProgrammingLanguages")
+      %>> ". "
+      %>> "Right now I'm working on my project " %> (href "https://qipl.org" $ text "Qipl") %>> ", "
+      %>> "which includes a compiler and bootable development environment. "
+      %>> "I'm a moderator of "
+      
      )
   %> (p
      %>> "When I'm not busy with my head in some books or deep into writing some proof, "
      %>> "you can find me involved in various school activities. "
-     %>> "I'm a member of the Hazen Marching Band, and the zero-period jazz band. "
+     %>> "I'm a member of the Hazen Marching Band, the zero-period jazz band, "
+     %>> "Film Club, the weekly D&amp;D meetings. "
      %>> "In addition I write Java for "
      %> (href "https://github.com/HazenRobotics/" $ text "robotics club")
      %>> ". "
@@ -37,17 +43,14 @@ page = simplePage "About James" "James" lastModified $
      %>> "or a challenging slope covered in fresh powder."
      )
   %> (h2 %>> "Accounts" %% ("id", "accounts"))
-  %> (p %>> "This is intended to be the exhaustive and canonical list of my online accounts. Anything not listed here is not me.")
-  %> (href "https://github.com/lijerom/" githubMark)
-  %> (href "https://www.linkedin.com/in/jtmarlijero/" linkedinLogo)
-  %> (href "https://www.reddit.com/user/lijero" redditLogo)
-  %> (href "https://www.youtube.com/channel/UCdLV1echQeS2BZxF7uSmubw" youtubeLogo)
-  %> (href "https://en.wikipedia.org/wiki/User:Lijero" wikipediaLogo)
-  %> (href "https://webchat.freenode.net/?channels=%23lijero" freenodeLogo)
-  %> (href "https://stackexchange.com/users/10815798/james-martin" $ img "James Martin's Stack Exchange profile" "https://stackexchange.com/users/flair/10815798.png" %% accountIconClass)
+  %> (p %>> "This is intended to be the exhaustive and canonical list of my online accounts. Anything not listed here is not me, or no longer active.")
+  %> (href githubUserUrl githubMark)
+  %> (href redditUserUrl redditLogo)
+  %> (href youtubeUserUrl youtubeLogo)
+  %> (href wikipediaUserUrl wikipediaLogo)
+  %> stackexchangeProfile
   %> (h2 %>> "Contact" %% ("id", "contact"))
   %> (p
       %>> "You may email me at " %> italic "james@[this website]" %>> ". "
-      %>> "I may also be found on Freenode as " %> italic "jtmar" %>> ". "
-      %>> "A PDF of my resume may be found " %> href resumeUrl (text "here") %>> "."
+      %>> "I may also be found on Freenode as " %> italic "jammar" %>> ". "
      )

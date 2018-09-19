@@ -82,3 +82,6 @@ freenodeLogoUrl = iconUrl ++ "freenode-logo.svg"
 
 freenodeLogo :: Html
 freenodeLogo = img "Freenode" freenodeLogoUrl %% accountIconClass
+
+stackexchangeProfile :: Html
+stackexchangeProfile = href stackexchangeUserUrl $ img "James Martin's Stack Exchange profile" stackexchangeFlairUrl %% accountIconClass

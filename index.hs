@@ -5,7 +5,7 @@ import Templates
 import HtmlGen
 
 lastModified :: String
-lastModified = "2018-05-11"
+lastModified = "2018-09-19"
 
 sitemap :: Sitemap
 sitemap = baseSitemap "https://jtmar.me/"
@@ -18,6 +18,6 @@ page = simplePage "James Martin" "James" lastModified $
   article
   %> (h1 %>> "Home")
   %> (p
-      %>> "Sorry! This site is currently under construction. "
-      %>> "However, you'll find that some of the other pages are more complete."
+      %>> "I have not yet released any blog posts. "
+      %>> "However, the other pages still are a bit more complete. "
      )

@@ -25,7 +25,7 @@ githubUrl :: String
 githubUrl = "https://github.com/"
 
 githubUserUrl :: String
-githubUserUrl = githubUrl ++ "LijeroM/"
+githubUserUrl = githubUrl ++ "jammar/"
 
 githubProjectUrl :: String -> String
 githubProjectUrl name = githubUserUrl ++ name ++ "/"
@@ -41,3 +41,18 @@ resumeUrl = baseUrl ++ "resume.pdf"
 
 qiplUrl :: String
 qiplUrl = "https://qipl.org"
+
+redditUserUrl :: String
+redditUserUrl = "https://reddit.com/user/lijero"
+
+youtubeUserUrl :: String
+youtubeUserUrl = "https://www.youtube.com/channel/UC_nCB91N-0zNbFiMoMu6-3w/"
+
+wikipediaUserUrl :: String
+wikipediaUserUrl = "https://en.wikipedia.org/wiki/User:Lijero"
+
+stackexchangeUserUrl :: String
+stackexchangeUserUrl = "https://stackexchange.com/users/10815798/james-martin"
+
+stackexchangeFlairUrl :: String
+stackexchangeFlairUrl = "https://stackexchange.com/users/flair/10815798.png"

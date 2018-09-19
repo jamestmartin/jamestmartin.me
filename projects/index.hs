@@ -4,7 +4,7 @@ import HtmlGen
 import Templates
 
 lastModified :: String
-lastModified = "2018-05-11"
+lastModified = "2018-09-19"
 
 sitemap :: Sitemap
 sitemap = baseSitemap projectsUrl
@@ -21,15 +21,22 @@ page = simplePage "James's Projects" "James" lastModified $
       %>> "All of my active programming projects may be found on "
       %> (href githubUserUrl $ text "my Github page")
       %>> ". My most notable projects include my work-in-progress programming language "
-      %> (href (githubQiplProjectUrl "qipl-agda") $ text "Qipl")
+      %> (href (githubQiplProjectUrl "qipl-asm") $ text "Qipl")
       %>> " and my contributions to "
       %> (href (githubUrl ++ "HazenRobotics/ftc_app") $ text "Hazen Robotics")
+      %>> ". I also have a planned bootable Qipl-based operating system, named "
+      %> (href (githubQiplProjectUrl "quos-kernel") $ text "Quos")
       %>> "."
      )
-  %> (h2 %>> "Audiobooks")
   %> (p
-     %>> "I am currently working on recording The Grapes of Wrath for my English teacher "
-     %>> "due to a lack of quality recordings of it. You may find that series in "
-     %> (href (baseUrl ++ "gow/") $ text "its YouTube playlist")
+     %>> "In addition, we have the static site generator I wrote for this website, "
+     %> (href (githubProjectUrl "html-generator") $ text "html-generator")
+     %>> ", and of course "
+     %> (href (githubProjectUrl "jtmar.me") $ text "the source code for this website itself")
      %>> "."
+     )
+  %> (h2 %>> "Music")
+  %> (p
+     %>> "Writing music is one of my other hobbies. "
+     %>> "However, I have not yet released anything. "
      )
