@@ -24,8 +24,6 @@ page = simplePage "About James" "James" lastModified $
       %>> ". "
       %>> "Right now I'm working on my project " %> (href "https://qipl.org" $ text "Qipl") %>> ", "
       %>> "which includes a compiler and bootable development environment. "
-      %>> "I'm a moderator of "
-      
      )
   %> (p
      %>> "When I'm not busy with my head in some books or deep into writing some proof, "
