@@ -15,28 +15,42 @@ sitemap = baseSitemap projectsUrl
 page :: Html
 page = simplePage "James's Projects" "James" lastModified $
   article
-  %> (h1 %>> "Projects")
-  %> (h2 %>> "Programming")
+  %> (h1 %% ("id", "projects") %>> "Projects")
+  %> (h2 %% ("id", "programming") %>> "Programming")
+  %> (h3 %>> "QIPL")
   %> (p
-      %>> "All of my active programming projects may be found on "
-      %> (href githubUserUrl $ text "my Github page")
-      %>> ". My most notable projects include my work-in-progress programming language "
-      %> (href (githubQiplProjectUrl "qipl-asm") $ text "Qipl")
-      %>> " and my contributions to "
-      %> (href (githubUrl ++ "HazenRobotics/ftc_app") $ text "Hazen Robotics")
-      %>> ". I also have a planned bootable Qipl-based operating system, named "
-      %> (href (githubQiplProjectUrl "quos-kernel") $ text "Quos")
-      %>> "."
+     %>> "QIPL Is a Programming Language, among other things. "
+     %>> "It is intended to be the embodiment of my programming philosophy: "
+     %>> "simple sucks less. "
+     %>> "More information can be found on "
+     %> (href qiplUrl $ text "its website") %>> ". "
+     )
+  %> (h3 %>> "Hazen Robotics")
+  %> (p
+     %>> "I am a programmer for the Hazen Robotics team. "
+     %>> "All of our code can be found "
+     %> (href (githubUrl ++ "HazenRobotics/") $ text "our GitHub organization") %>> ". "
+     )
+  %> (h3 %>> "html-generator")
+  %> (p
+     %>> "This website was written using a static site generator I wrote myself. "
+     %>> "It's got a really, really long way to go, but you can watch it develop "
+     %> (href (githubProjectUrl "html-generator") $ text "on GitHub") %>> ". "
      )
   %> (p
-     %>> "In addition, we have the static site generator I wrote for this website, "
-     %> (href (githubProjectUrl "html-generator") $ text "html-generator")
-     %>> ", and of course "
-     %> (href (githubProjectUrl "jtmar.me") $ text "the source code for this website itself")
+     %>> "There's also the source code for both "
+     %> (href (githubProjectUrl "jtmar.me") $ text "jtmar.me")
+     %>> " and "
+     %> (href (githubQiplProjectUrl "qipl.org") $ text "qipl.org")
      %>> "."
+     )
+  %> (h3 %>> "Other Projects")
+  %> (p
+     %>> "I used to have a whole bunch of other cool projects and games "
+     %>> "lying around, but they've all been lost in the Great Purge, "
+     %>> "which I generally regard as one of the worst mistakes I've ever made. "
      )
   %> (h2 %>> "Music")
   %> (p
-     %>> "Writing music is one of my other hobbies. "
-     %>> "However, I have not yet released anything. "
+     %>> "Writing music is one of my other hobbies, but I have not yet released anything. "
      )
