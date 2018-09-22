@@ -6,7 +6,7 @@ import HtmlGen.Html
 import HtmlGen.Tags
 
 personIconUrl :: String
-personIconUrl = iconUrl ++ "person.svg"
+personIconUrl = iconUrl ++ "/" ++ "person.svg"
 
 personIcon :: String -> Html
 personIcon alt = img alt personIconUrl
@@ -15,7 +15,7 @@ authorIcon :: Html
 authorIcon = personIcon "Author"
 
 clockIconUrl :: String
-clockIconUrl = iconUrl ++ "clock.svg"
+clockIconUrl = iconUrl ++ "/" ++ "clock.svg"
 
 clockIcon :: String -> Html
 clockIcon alt = img alt clockIconUrl
@@ -24,7 +24,7 @@ updatedIcon :: Html
 updatedIcon = clockIcon "Updated"
 
 ccbysaIconUrl :: String
-ccbysaIconUrl = resUrl ++ "cc-by-sa-small.png"
+ccbysaIconUrl = resUrl ++ "/cc-by-sa-small.png"
 
 ccbysaIcon :: Html
 ccbysaIcon = img "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License" ccbysaIconUrl
@@ -36,7 +36,7 @@ license =
       %% ("rel", "license"))
 
 faviconUrl :: String
-faviconUrl = baseUrl ++ "favicon.png"
+faviconUrl = baseUrl ++ "/favicon.png"
 
 faviconMime :: String
 faviconMime = "image/png"
@@ -48,37 +48,37 @@ accountIconClass :: (String, String)
 accountIconClass = ("class", "accounticon")
 
 githubMarkUrl :: String
-githubMarkUrl = iconUrl ++ "github-mark-100px.png"
+githubMarkUrl = iconUrl ++ "/github-mark-100px.png"
 
 githubMark :: Html
 githubMark = img "GitHub" githubMarkUrl %% accountIconClass
 
 linkedinLogoUrl :: String
-linkedinLogoUrl = iconUrl ++ "linkedin-logo-100px.png"
+linkedinLogoUrl = iconUrl ++ "/linkedin-logo-100px.png"
 
 linkedinLogo :: Html
 linkedinLogo = img "LinkedIn" linkedinLogoUrl %% accountIconClass
 
 redditLogoUrl :: String
-redditLogoUrl = iconUrl ++ "reddit-logo-100px.png"
+redditLogoUrl = iconUrl ++ "/reddit-logo-100px.png"
 
 redditLogo :: Html
 redditLogo = img "Reddit" redditLogoUrl %% accountIconClass
 
 wikipediaLogoUrl :: String
-wikipediaLogoUrl = iconUrl ++ "wikipedia-logo-100px.png"
+wikipediaLogoUrl = iconUrl ++ "/wikipedia-logo-100px.png"
 
 wikipediaLogo :: Html
 wikipediaLogo = img "Wikipedia" wikipediaLogoUrl %% accountIconClass
 
 youtubeLogoUrl :: String
-youtubeLogoUrl = iconUrl ++ "youtube-logo-100px.jpeg"
+youtubeLogoUrl = iconUrl ++ "/youtube-logo-100px.jpeg"
 
 youtubeLogo :: Html
 youtubeLogo = img "Youtube" youtubeLogoUrl %% accountIconClass
 
 freenodeLogoUrl :: String
-freenodeLogoUrl = iconUrl ++ "freenode-logo.svg"
+freenodeLogoUrl = iconUrl ++ "/freenode-logo.svg"
 
 freenodeLogo :: Html
 freenodeLogo = img "Freenode" freenodeLogoUrl %% accountIconClass

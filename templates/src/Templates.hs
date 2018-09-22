@@ -20,7 +20,7 @@ basePage pageTitle authorName content =
        %> faviconLink
        %> (title %>> pageTitle)
        %> viewport
-       %> (newTag "script" %% ("async", "async") %% ("src", resUrl ++ "common.js"))
+       %> (newTag "script" %% ("async", "async") %% ("src", resUrl ++ "/common.js"))
        %> blockAllMixedContent
        %> cspMeta "default-src 'none'; style-src 'self'; img-src 'self' https://stackexchange.com; script-src 'self';"
        )
@@ -31,7 +31,7 @@ navSection =
   nav
   %> (spanTag `withId` "navbrand" %> ((href baseUrl $ text "James Martin") %% ("class", "navbrand")))
   %> unorderedList
-         [ href baseUrl $ text "Home"
+         [ href (baseUrl ++ "/") $ text "Home"
          , href projectsUrl $ text "Projects"
          , href aboutUrl $ text "About"
          ]

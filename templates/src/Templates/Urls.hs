@@ -1,43 +1,43 @@
 module Templates.Urls where
 
 baseUrl :: String
-baseUrl = "https://jtmar.me/"
+baseUrl = "https://jtmar.me"
 
 resUrl :: String
-resUrl = baseUrl ++ "res/"
+resUrl = baseUrl ++ "/res"
 
 iconUrl :: String
-iconUrl = resUrl ++ "icon/"
+iconUrl = resUrl ++ "/icon"
 
 ccbysaUrl :: String
 ccbysaUrl = "http://creativecommons.org/licenses/by-sa/4.0/"
 
 stylesheetCommonUrl :: String
-stylesheetCommonUrl = resUrl ++ "common.css"
+stylesheetCommonUrl = resUrl ++ "/common.css"
 
 projectsUrl :: String
-projectsUrl = baseUrl ++ "projects/"
+projectsUrl = baseUrl ++ "/projects"
 
 aboutUrl :: String
-aboutUrl = baseUrl ++ "about/"
+aboutUrl = baseUrl ++ "/about"
 
 githubUrl :: String
-githubUrl = "https://github.com/"
+githubUrl = "https://github.com"
 
 githubUserUrl :: String
-githubUserUrl = githubUrl ++ "jammar/"
+githubUserUrl = githubUrl ++ "/jammar"
 
 githubProjectUrl :: String -> String
-githubProjectUrl name = githubUserUrl ++ name ++ "/"
+githubProjectUrl name = githubUserUrl ++ "/" ++ name
 
 githubQiplUrl :: String
-githubQiplUrl = githubUrl ++ "qipl/"
+githubQiplUrl = githubUrl ++ "/" ++ "qipl"
 
 githubQiplProjectUrl :: String -> String
-githubQiplProjectUrl name = githubQiplUrl ++ name ++ "/"
+githubQiplProjectUrl name = githubQiplUrl ++ "/" ++ name
 
 resumeUrl :: String
-resumeUrl = baseUrl ++ "resume.pdf"
+resumeUrl = baseUrl ++ "/resume.pdf"
 
 qiplUrl :: String
 qiplUrl = "https://qipl.org"
@@ -46,7 +46,7 @@ redditUserUrl :: String
 redditUserUrl = "https://reddit.com/user/lijero"
 
 youtubeUserUrl :: String
-youtubeUserUrl = "https://www.youtube.com/channel/UC_nCB91N-0zNbFiMoMu6-3w/"
+youtubeUserUrl = "https://www.youtube.com/channel/UC_nCB91N-0zNbFiMoMu6-3w"
 
 wikipediaUserUrl :: String
 wikipediaUserUrl = "https://en.wikipedia.org/wiki/User:Lijero"

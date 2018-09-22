@@ -8,7 +8,7 @@ lastModified :: String
 lastModified = "2018-09-22"
 
 sitemap :: Sitemap
-sitemap = baseSitemap "https://jtmar.me/"
+sitemap = baseSitemap (baseUrl ++ "/")
   `withLastMod` lastModified
   `withPriority` "1.0"
   `withChangeFreq` "weekly"
