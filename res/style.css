@@ -1,0 +1,160 @@
+body {
+    max-width: 95ch;
+    padding: 20px;
+    margin: auto;
+    font-size: 15pt;
+    font-family: sans-serif;
+    line-height: 1.5em;
+    background-color: white;
+}
+
+.resume {
+    max-width: 70ch;
+    overflow: auto;
+}
+
+p {
+    max-width: 70ch;
+}
+
+@media (min-width: 900px) {
+    .card {
+        float: right;
+        padding: 0 30px;
+        margin: 0 30px;
+        border-left: solid black;
+        max-width: 22ch;
+        line-height: 2em;
+    }
+
+    .card figure {
+        margin: 0;
+    }
+}
+
+@media (max-width: 899px) {
+    .card {
+        margin: auto;
+        padding: 20px;
+        border: solid black;
+    }
+
+    .card figure {
+        margin: auto;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+    .card { column-count: 2; }
+    .card h3 { column-span: all; }
+}
+
+img.pgp-img {
+    float: left;
+    height: 1.2em !important;
+}
+
+.pgp > a {
+    font-family: monospace;
+    font-size: 10pt;
+    line-height: 1.2em;
+    display: inline-block;
+    padding-left: 5px;
+    width: 24ch;
+}
+
+.card h3, .card h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.contact-list img {
+    width: 1em;
+    height: 1em;
+}
+
+th {
+    padding-right: 7px;
+}
+
+.more {
+    font-size: .8em;
+}
+
+.duration {
+    float: right;
+}
+
+li > .service::after, .skill-category::after {
+    content: ": ";
+}
+
+.dt-end::before {
+    content: " — ";
+}
+
+.inline-list {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.inline-list > li {
+    display: inline;
+}
+
+.inline-list > li:not(:last-child)::after {
+    content: ", ";
+}
+
+.inline-list > li:last-child:not(:first-child)::before {
+    content: "and ";
+}
+
+.inline-list > li:last-child::after {
+    content: ".";
+}
+
+.ap-score::before {
+    content: "(";
+}
+
+.ap-score::after {
+    content: ")";
+}
+
+.p-experience:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.experiences > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+section figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 12pt;
+    line-height: 1.5em;
+}
+
+section figure img {
+    width: 100%;
+}
+
+footer {
+    min-height: 100px;
+}
