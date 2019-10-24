@@ -27,9 +27,9 @@
 
   <script type="text/javascript" src="/res/character.js" />
 </head>
-<body>
+<body class="dnd-character">
   <header>
-    <h1>Character Name</h1>
+    <h1 class="dnd-character-name">Character Name</h1>
     <!--<img src="/res/photo.png" alt="" />-->
   </header>
   <aside id="basic-info" class="card">
@@ -43,39 +43,46 @@
         <table class="info-table">
           <tr>
             <td>Class</td>
-            <td>cultist</td>
+            <td class="dnd-character-class">cultist</td>
           </tr>
           <tr>
             <td>Level</td>
-            <td>1</td>
+            <td class="dnd-character-level">1</td>
           </tr>
           <tr>
             <td>Race</td>
-            <td><a href="#race">bat hybrid</a></td>
+            <td class="dnd-character-race"><a href="#race">bat hybrid</a></td>
           </tr>
           <tr>
             <td>Alignment</td>
-            <td>neutral good</td>
+            <td class="dnd-character-alignment dnd-alignment">
+              <span class="dnd-alignment-lawfulness">neutral</span>
+              <span class="dnd-alignment-morality">good</span>
+            </td>
           </tr>
           <tr>
             <td>Deity</td>
-            <td>Sui</td>
+            <td class="dnd-character-deity">Sui</td>
           </tr>
           <tr>
             <td>Age</td>
-            <td></td>
+            <td class="dnd-character-age"></td>
           </tr>
           <tr>
             <td>Gender</td>
-            <td>male</td>
+            <td class="dnd-character-gender dnd-character-sex">male</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td class="dnd-character-size">medium</td>
           </tr>
           <tr>
             <td>Height</td>
-            <td>6'0</td>
+            <td class="dnd-character-height">6'0</td>
           </tr>
           <tr>
             <td>Weight</td>
-            <td>165</td>
+            <td class="dnd-character-weight">165</td>
           </tr>
         </table>
         <br />
@@ -83,19 +90,16 @@
           <a href="#abilities">§</a>
           Ability Scores
         </h3>
-        <noscript>
-          Please enable JavaScript to automatically calculate the skill bonus.
-        </noscript>
-        <table id="ability-scores">
+        <table id="ability-scores" class="dnd-character-abilities">
           <tr>
             <th>Ability</th>
             <th>Score</th>
             <th>Modifier</th>
           </tr>
-          <tr>
-            <td><abbr title="Strength">Str</abbr></td>
-            <td>16</td>
-            <td>+3</td>
+          <tr class="dnd-ability">
+            <td class="dnd-ability-name"><abbr title="Strength">Str</abbr></td>
+            <td class="dnd-ability-score">16</td>
+            <td class="dnd-ability-modifier">+3</td>
           </tr>
           <tr>
             <td><abbr title="Dexterity">Dex</abbr></td>
@@ -184,6 +188,9 @@
         <a href="#skills">§</a>
         Skills
       </h3>
+      <noscript>
+        Please enable JavaScript to automatically calculate the skill bonus.
+      </noscript>
       <span id="skill-points"></span>
       <table id="skills-table">
         <tr id="skills-headers">
@@ -285,7 +292,7 @@
         <tr>
           <td>
             <abbr title="architecture + history + local + nobility">
-              Knowledge (Social)
+              <a href="/lore/knowledge">Knowledge (Social)</a>
             </abbr>
           </td>
           <td>Int</td>
@@ -295,7 +302,7 @@
         <tr>
           <td>
             <abbr title="geography + nature + dungeoneering">
-              Knowledge (Survival)
+              <a href="/lore/knowledge">Knowledge (Survival)</a>
             </abbr>
           </td>
           <td>Int</td>
@@ -305,7 +312,7 @@
         <tr>
           <td>
             <abbr title="arcana + psionics + religion + the planes">
-              Knowledge (Magical)
+              <a href="/lore/knowledge">Knowledge (Magical)</a>
             </abbr>
           </td>
           <td>Int</td>
@@ -339,7 +346,7 @@
         <tr>
           <td>
             <abbr title="exclusive to races with a strong sense of smell">
-              <a href="https://www.dandwiki.com/wiki/SRD:Scent">Scent</a>
+              <a href="/lore/smell">Scent</a>
             </abbr>
           </td>
           <td>Wis</td>

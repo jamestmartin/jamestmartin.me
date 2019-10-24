@@ -1,4 +1,7 @@
+html { height: 100%; }
+
 body {
+    min-height: 100%;
     max-width: 95ch;
     padding: 20px;
     margin: auto;
@@ -13,8 +16,12 @@ body {
     overflow: auto;
 }
 
-p {
+p, blockquote {
     max-width: 70ch;
+}
+
+blockquote {
+    font-style: italic;
 }
 
 @media (min-width: 900px) {
@@ -68,6 +75,10 @@ img.pgp-img {
     padding: 0;
 }
 
+.card img {
+    display: inline;
+}
+
 .contact-list {
     list-style-type: none;
     padding: 0;
@@ -77,6 +88,10 @@ img.pgp-img {
 .contact-list img {
     width: 1em;
     height: 1em;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
 
 th {
@@ -91,14 +106,6 @@ th {
     float: right;
 }
 
-li > .service::after, .skill-category::after {
-    content: ": ";
-}
-
-.dt-end::before {
-    content: " — ";
-}
-
 .inline-list {
     display: inline-block;
     list-style-type: none;
@@ -107,26 +114,6 @@ li > .service::after, .skill-category::after {
 
 .inline-list > li {
     display: inline;
-}
-
-.inline-list > li:not(:last-child)::after {
-    content: ", ";
-}
-
-.inline-list > li:last-child:not(:first-child)::before {
-    content: "and ";
-}
-
-.inline-list > li:last-child::after {
-    content: ".";
-}
-
-.ap-score::before {
-    content: "(";
-}
-
-.ap-score::after {
-    content: ")";
 }
 
 .p-experience:not(:last-child) {
@@ -156,5 +143,14 @@ section figure img {
 }
 
 footer {
-    min-height: 100px;
+    font-size: 75%;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
+.nocss {
+    visibility: hidden;
+    display: none;
 }
