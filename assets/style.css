@@ -1,0 +1,14 @@
+html { height: 100%; }
+
+body {
+  background: white;
+  font: 15pt/1.5em sans-serif;
+  margin: auto;
+  max-width: 95ch;
+  min-height: 100%;
+  padding: 20px;
+}
+
+p {
+  max-width: 70ch;
+}
