@@ -1,44 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+<meta charset="utf-8">
 <title>James T. Martin</title>
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<h1>James T. Martin</h1>
-<h2>Summary</h2>
-<p>I am a self-taught programmer, fond of programming language theory.
-<h2>Skills</h2>
-<ul>
-  <li>Programming Languages: Java, Haskell, Agda, HTML, Rust.
-</ul>
+<body>
+<header>
+  <h1>James T. Martin</h1>
+  A self-taught programmer fond of programming language theory.
+</header>
 
-<h2>Experience</h2>
-<h3><a href="https://www.proglangdesign.net">The Programming Language Design Community</a></h3>
-<ul>
-  <li>I moderated <a href="https://www.reddit.com/r/ProgrammingLanguages/">/r/ProgrammingLanguages</a> from June 5th, 2018 to April 19th, 2019.
-  <li>I co-founded <a href="https://discord.gg/4Kjt3ZE">the official /r/ProgrammingLanguages Discord</a> on January 3rd, 2019.
-  <li>I spearheaded the redesign of <a href="https://www.proglangdesign.net">www.proglangdesign.net</a>, which was released on January 19th, 2019.
-  <li>
-    I opened a bridge between #proglangdesign and ##programminglanguages on Freenode and the Discord via Matrix on January 5th, 2019.
-    I am still the administrator and host of this bridge.
-</ul>
+<div class="container">
+<div class="sidebar">
+  <section id="personal-info">
+    <h2>Personal Info</h2>
+    
+    <dl>
+      <div>
+        <dt>Email</dt>
+        <dd>@jtmar.me, james</dd>
+      </div>
+      <div>
+        <dt>Phone</dt>
+        <dd><a href="tel:+1-206-331-1994">(206) 331-1994</a></dd>
+      </div>
+      <div>
+        <dt>Location</dt>
+        <dd>Renton, WA</dd>
+      </div>
+      <div>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/jamestmartin">jamestmartin</a></dd>
+      </div>
+      <div>
+        <dt>LinkedIn</dt>
+        <dd><a href="https://www.linkedin.com/in/jamestmartinme/">jamestmartinme</a></dd>
+      </div>
+    </dl>
+  </section>
+</div>
 
-<h3>Hazen Robotics Club</h3>
-<p>I was a Java developer for the Hazen Robotics Club from September 2017 to October 2018.
-<ul>
-  <li>I mentored programming at the summer robotics camp, and
-  <li>taught basic tools like Java and Git to club members.
-</ul>
+<div class="content">
+<section id="experience">
+  <h2>Experience</h2>
+  
+  <section id="pld-community" class="experience">
+    <header>
+      <h3><a href="https://proglangdesign.net">Programming Language Design Community</a></h3>
+      <span class="experience-duration"><time datetime="2018-06">June 2018</time> onward</span>
+    </header>
+    <ul>
+      <li>Led redesign of <a href="https://proglangdesign.net">the website</a></li>
+      <li>Automated the generation of <a href="https://proglangdesign.net/#projects">the community projects list</a> using Jekyll</li>
+      <li><a href="https://github.com/proglangdesign/matrix.proglangdesign.net">Bridged</a>
+        the <a href="https://discord.gg/4Kjt3ZE">Discord</a> and <a href="https://irc.lc/freenode/proglangdesign">Freenode</a> sub-communities via <a href="https://matrix.org">Matrix</a></li>
+      <li>Co-founded the Discord sub-community; moderated it and <a href="https://reddit.com/r/ProgrammingLanguages">/r/ProgrammingLanguages</a></li>
+    </ul>
+  </section>
 
-<h2>Education</h2>
-<ul>
-  <li>I graduated from Hazen High School in June 2019.
-  <li>
-    I will begin attending Bellevue College in Winter 2020,
-    with the intent to study computer science.
-</ul>
+  <section class="experience">
+    <header>
+      <h3>Hazen Robotics Club</h3>
+    </header>
+    <ul>
+      <li>Mentored programming at the summer robotics camp</li>
+      <li>Taught club members to use Java and Git</li>
+      <li>Collaborated to build robot controller programs for FTC competitions</li>
+    </ul>
+  </section>
+</section>
 
-<h3>Certifications</h3>
-<ul>
-  <li>OSHA 10
-</ul>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Languages: Java 8, Haskell, HTML5/XHTML</li>
+    <li>Tools: Git, GitHub, continuous integration, bug tracking, unit testing, property testing</li>
+    <li>Administration: Debian GNU/Linux, Nginx</li>
+    <li>APIs: <abbr title="Representational State Transfer">REST</abbr>, JSON, JSON Schema, JSON-LD, <abbr title="Hypermedia as the Engine of Application State">HATEOAS</abbr></li>
+    <li>Security:
+      <ul>
+        <li><abbr title="Transport Layer Security">TLS</abbr>: <a href="https://letsencrypt.org">Let's Encrypt</a>, <a href="https://www.ssllabs.com/">SSL Labs</a>, DNS <abbr title="Certification Authority Authorization">CAA</abbr>, <abbr title="HTTP Strict Transport Security">HSTS</abbr> deployment</li>
+        <li>Web: <abbr title="Cross-Site Scripting">XSS</abbr> prevention, <abbr title="Cross-Site Request Forgery">CSRF</abbr> prevention, <abbr title="Content Security Policy">CSP</abbr>, input validation, SQL injection prevention</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <section class="experience">
+    <header>
+      <h3><a href="https://bellevuecollege.edu/">Bellevue College</a></h3>
+      <span class="experience-duration">
+        <time datetime="2020-01">January 2020</time> onward
+      </span>
+    </header>
+    <ul>
+      <li>Intended degree: <a href="https://catalog.bellevuecollege.edu/preview_program.php?catoid=6&poid=1317">Science, Track II: Engineering MRP* Electrical and Computer Engineering, AS</a></li>
+      <li>Plans to transfer to the University of Washington after associate degree.</li>
+    </ul>
+  </section>
+  <section class="experience">
+    <header>
+      <h3><a href="https://hazen.rentonschools.us/">Hazen High School</a></h3>
+      <span class="experience-duration">
+        <time datetime="2015-09-02">2015</time>
+        to <time datetime="2019-06-13">2019</time>
+      </span>
+    </header>
+    <ul>
+      <li>Recieved OSHA 10 certification.</li>
+      <li>Member of marching, symphonic, and jazz bands; recieved John Philip Sousa award in 2019.</li>
+    </ul>
+  </section>
+</section>
+</div>
+</div>
