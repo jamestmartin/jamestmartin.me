@@ -16,7 +16,7 @@ h1, h2, h3 {
     margin: 5px 0;
 }
 
-section {
+section, article {
     margin: 10px 0;
 }
 
@@ -29,20 +29,77 @@ section {
 }
 
 .container {
-    background-color: #FAFAFA;
     display: flex;
     flex-flow: row-reverse wrap;
     align-items: stretch;
+}
+
+.container:not(header) {
+    background-color: #FAFAFA;
 }
 
 .content {
     padding: 25px;
 }
 
+article {
+    background-color: #FAFAFA;
+    padding: 25px;
+    padding-top: 5px;
+    padding-right: auto;
+    margin: 0;
+}
+
+p, article li {
+    max-width: 75ch;
+}
+
 .sidebar {
-    background-color: #F0F0F0;
-    color: #111;
     padding: 25px;
     min-width: 23ch;
     flex-grow: 1;
+}
+
+.sidebar:not(nav) {
+    background-color: #F0F0F0;
+    color: #111;
+}
+
+h1:not(::parent.noflex) {
+    display: inline-block;
+    align-self: center;
+}
+
+body > header:not(.noflex) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+nav {
+    flex-grow: 1;
+    align-self: center;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+code {
+    font-weight: bold;
 }
