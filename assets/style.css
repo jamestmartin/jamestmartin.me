@@ -1,105 +1,86 @@
+/*
+ * The body consists of a nav bar and the website's main content.
+ * The main content should take up the entire height of the viewport.
+ */
 body {
-    background: white;
-    font: 15pt/1.5em sans-serif;
-    margin: auto;
-    max-width: 120ch;
-    min-height: 100%;
-}
-
-body > header {
-    color: #EEEEEE;
-    background: #111111;
-    padding: 20px;
-}
-
-h1, h2, h3 {
-    margin: 5px 0;
-}
-
-section, article {
-    margin: 10px 0;
-}
-
-.experience h3 {
-  display: inline-block;
-}
-
-.experience-duration {
-  float: right;
-}
-
-.container {
     display: flex;
-    flex-flow: row-reverse wrap;
-    align-items: stretch;
+    flex-flow: column;
+    max-width: 120ch;
+    min-height: 100vh;
+    margin: auto;
+    
+    background: #fff;
+    
+    font: 15pt/1.5em sans-serif;
 }
 
-.container:not(header) {
-    background-color: #FAFAFA;
+/*
+ * The website header consists of the website's title and a nav bar.
+ * The title is left-aligned; the nav bar is right-aligned.
+ *
+ * If the nav bar doesn't fit to the right of the site title,
+ * it should be located under the website title and possibly turn into columns.
+ */
+body > header {
+    flex: 0 1 auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    color: #eee;
+    background: #111;
+    
+    font-size: 1.25em;
 }
 
-.content {
-    padding: 25px;
+.site-title {
+    display: inline-block;
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body > header a {
+    color: inherit;
+}
+
+/* The site navigation links. These are displayed as columns. */
+body > header > nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    
+    list-style-type: none;
+}
+
+body > header > nav li {
+    flex: 1;
+    
+    display: inline-block;
+    margin: 0 15px;
+}
+
+main {
+    flex: 1;
+    
+    background-color: #fafafa;
 }
 
 article {
-    background-color: #FAFAFA;
-    padding: 25px;
-    padding-top: 5px;
-    padding-right: auto;
-    margin: 0;
+    margin: 20px 40px;
 }
 
-p, article li {
+p, li {
     max-width: 75ch;
 }
 
-.sidebar {
-    padding: 25px;
-    min-width: 23ch;
-    flex-grow: 1;
+aside {
+    float: right;
 }
 
-.sidebar:not(nav) {
-    background-color: #F0F0F0;
-    color: #111;
-}
-
-h1:not(::parent.noflex) {
-    display: inline-block;
-    align-self: center;
-}
-
-body > header:not(.noflex) {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-}
-
-nav {
-    flex-grow: 1;
-    align-self: center;
-    margin-left: auto;
-    display: flex;
-    flex-flow: row-reverse wrap;
-}
-
-nav a {
-    color: white;
-    font-size: 1.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-code {
-    font-weight: bold;
+img {
+    width: 300px;
 }

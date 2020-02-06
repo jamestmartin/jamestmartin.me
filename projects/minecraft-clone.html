@@ -4,32 +4,44 @@
 <title>Minecraft Clone - Projects - James T. Martin</title>
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <header>
-<h1>Minecraft Clone</h1>
+  <span class="site-title">
+    <a href="/">James T. Martin</a>
+  </span>
+    
+  <nav>
+    <ul>
+      <li><a href="/projects/">Projects</a>
+      <li><a href="/resume/">Resume</a>
+      <li><a href="/contact">Contact</a>
+    </ul>
+  </nav>
 </header>
 
-<article>
-<p>
-  In 2014, while still in middle school, I wrote a Minecraft clone using the Unity game engine and C#.
-  It featured:
-</p>
-<ul>
-  <li>a first-person interactive editable world (duh),</li>
-  <li>infinite procedural map generation using simplex noise,</li>
-  <li>and a custom TCP-based multiplayer protocol.</li>
-</ul>
-<p>
-  I wrote all of the code myself, from scratch, except for one thing: the mesh generation.
-  For that, I began with a mesh generator and optimizer someone else wrote,
-  and slowly replaced it with my own code as I learned how it worked.
-  Ultimately, my code even produced better meshes
-  because my algorithm understood the greater context of the game world better (like chunk boundaries).
-</p>
-<p>
-  This was one of my favorite projects. I was very proud of it as a middle schooler.
-  Disappointingly, I lost the code when I deleted my old email address,
-  which made me lose access to my private BitBucket repositories.
-</p>
-</article>
+<main>
+  <article id="minecraft-clone">
+    <header>
+      <h2>Minecraft Clone</h2>
+    </header>
+    <p>
+      In 2014, while still in middle school,
+      I wrote a Minecraft clone using the Unity game engine and C#.
+      It featured:
+    <ul>
+      <li>a first-person interactive editable world (duh),
+      <li>infinite procedural map generation using simplex noise,
+      <li>and a custom TCP-based multiplayer protocol.
+    </ul>
+    <p>
+      I wrote all of the code myself, from scratch, except for one thing: the mesh generation.
+      For that, I began with a mesh generator and optimizer someone else wrote,
+      and slowly replaced it with my own code as I learned how it worked.
+      Ultimately, my code even produced better meshes
+      because my algorithm understood the greater context of the game world better (like chunk boundaries).
+    <p>
+      This was one of my favorite projects. I was very proud of it as a middle schooler.
+      Disappointingly, I lost the code when I deleted my old email address,
+      which made me lose access to my private BitBucket repositories.
+  </article>
+</main>

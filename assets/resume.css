@@ -1,0 +1,55 @@
+body {
+    display: block;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2, h3 {
+    margin: 5px 0;
+}
+
+.resume {
+    margin: 0;
+}
+
+.resume > header {
+    background: #111;
+    color: #eee;
+
+    padding: 20px;
+}
+
+/* Contains the sidebar and the resume main content. */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside {
+    flex: 1 1 content;
+
+    padding: 20px 40px;
+
+    background: #f0f0f0;
+    color: #111;
+}
+
+/* The resume main content. */
+.content {
+    flex: 1 1 content;
+
+    max-width: 75ch;
+    padding: 20px;
+}
+
+.experience h3 {
+    display: inline-block;
+}
+
+.experience-duration {
+    float: right;
+}
