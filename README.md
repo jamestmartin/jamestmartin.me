@@ -1,6 +1,20 @@
 # jamestmartin.me
 This is the source code for my personal website, [https://jamestmartin.me](jamestmartin.me).
 
+## Installation
+This project is built using [https://jekyllrb.com/](Jekyll), a static site generator.
+
+To install this website, you must first [https://jekyllrb.com/docs/installation/](install Jekyll).
+Next, install all necessary modules with `bundle exec`.
+
+To build the site, run `bundle exec jekyll build`.
+To rebuild the site continuously as updates are made,
+run `bundle exec jekyll build --watch`.
+The web root for the website will be `_site/`.
+You may point your web server there and the site will work with no additional effort.
+
+To work on the site without installing full web server, use `bundle exec jekyll serve`.
+
 ## Code Conventions
 All of my code is valid HTML5 and CSS3 according to ["https://html.spec.whatwg.org"](WHATWG standards)
 

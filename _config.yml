@@ -1,0 +1,4 @@
+url: "https://jamestmartin.me"
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-sitemap

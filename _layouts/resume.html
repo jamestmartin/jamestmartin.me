@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="utf-8">
+<title>James T. Martin, {{ page.title }}</title>
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/resume.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="canonical" href="{{ site.url }}{{ page.permalink }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<main>
+  <article class="resume">
+    <header>
+      <h1>James T. Martin, {{ page.resumeName }}</h1>
+      <span class="tagline">{{ page.tagline }}</span>
+    </header>
+
+    <!-- TODO: Figure out a more semantic way to deal with the container/content divs. -->
+    <div class="container">
+      <aside>
+        <section id="personal-info">
+          <header>
+            <h2>Personal Info</h2>
+          </header>
+
+          <dl>
+            <div>
+              <dt>Email
+                <dd>@jtmar.me, james
+            </div>
+            <div>
+              <dt>Phone
+                <dd><a href="tel:+1-206-331-1994">(206) 331-1994</a>
+            </div>
+            <div>
+              <dt>Location
+                <dd>Renton, WA
+            </div>
+            <div>
+              <dt>GitHub
+                <dd><a href="https://github.com/jamestmartin">jamestmartin</a>
+            </div>
+            <div>
+              <dt>LinkedIn
+                <dd><a href="https://www.linkedin.com/in/jamestmartinme/">jamestmartinme</a>
+            </div>
+          </dl>
+        </section>
+      </aside>
+
+      <div class="content">{{ content }}</div>
+    </div>
+  </article>
+</main>

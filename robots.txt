@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+Host: jamestmartin.me
+Sitemap: https://jamestmartin.me/sitemap.xml
