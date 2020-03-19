@@ -12,7 +12,7 @@
   <article class="resume">
     <header>
       <h1>James T. Martin, {{ page.title }}</h1>
-      <span class="tagline">{{ page.tagline }}</span>
+      {% if page.tagline %}<span class="tagline">{{ page.tagline }}</span>{% endif %}
     </header>
 
     <!-- TODO: Figure out a more semantic way to deal with the container/content divs. -->
