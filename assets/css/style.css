@@ -5,82 +5,51 @@
 body {
     display: flex;
     flex-flow: column;
-    max-width: 120ch;
+    max-width: 60ch;
     min-height: 100vh;
     margin: auto;
     
-    background: #fff;
-    
-    font: 15pt/1.5em sans-serif;
+    background-color: #fafafa;
+
+    font-size: 1.4rem;
+    font-family: monospace;
+    line-height: 1.8em;
 }
 
-/*
- * The website header consists of the website's title and a nav bar.
- * The title is left-aligned; the nav bar is right-aligned.
- *
- * If the nav bar doesn't fit to the right of the site title,
- * it should be located under the website title and possibly turn into columns.
- */
-body > header {
-    flex: 0 1 auto;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-
-    color: #eee;
-    background: #111;
-    
-    font-size: 1.25em;
+figure {
+    margin: 16px 0;
+    padding: 16px;
+    border-style: solid;
 }
 
-.site-title {
-    display: inline-block;
-
-    font-size: 1.5em;
+figcaption {
     font-weight: bold;
 }
 
-body > header a {
-    color: inherit;
+dl {
+    margin: 20px;
 }
 
-/* The site navigation links. These are displayed as columns. */
-body > header > nav ul {
-    display: flex;
-    flex-wrap: wrap;
+dl div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+dl dd, ul li:not(:first-child) {
+    margin-top: 5px;
+}
+
+dl.inline dt {
+    width: 10ch;
+}
+
+dl.inline dt:after {
+    content: ":";
+}
+
+dl.inline dd {
     margin: 0;
-    
-    list-style-type: none;
 }
 
-body > header > nav li {
-    flex: 1;
-    
+dl.inline dt, dl.inline dd {
     display: inline-block;
-    margin: 0 15px;
-}
-
-main {
-    flex: 1;
-    
-    background-color: #fafafa;
-}
-
-article {
-    margin: 20px 40px;
-}
-
-p, li {
-    max-width: 75ch;
-}
-
-aside {
-    float: right;
-}
-
-img {
-    width: 300px;
 }
