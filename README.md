@@ -1,10 +1,10 @@
 # jamestmartin.me
-This is the source code for my personal website, [https://jamestmartin.me](jamestmartin.me).
+This is the source code for my personal website, [jamestmartin.me](https://jamestmartin.me).
 
 ## Installation
-This project is built using [https://jekyllrb.com/](Jekyll), a static site generator.
+This project is built using [Jekyll](https://jekyllrb.com/), a static site generator.
 
-To install this website, you must first [https://jekyllrb.com/docs/installation/](install Jekyll).
+To install this website, you must first [install Jekyll](https://jekyllrb.com/docs/installation/).
 Next, install all necessary modules with `bundle exec`.
 
 To build the site, run `bundle exec jekyll build`.
@@ -16,8 +16,8 @@ You may point your web server there and the site will work with no additional ef
 To work on the site without installing full web server, use `bundle exec jekyll serve`.
 
 ## Code Conventions
-All of my code is valid HTML5 and CSS3 according to ["https://html.spec.whatwg.org"](WHATWG standards)
+All of my code is valid HTML5 and CSS3 according to [WHATWG standards](https://html.spec.whatwg.org)
 
-I follow the ["https://google.github.io/styleguide/htmlcssguide.html"](Google HTML/CSS Style Guide).
+I follow the [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html).
 Google recommends dropping optional tags wherever possible;
-I know how to write valid XHTML as well, but choose not to as per the style guide.
+I know how to write valid XHTML polyglot as well, but choose not to as per the style guide.

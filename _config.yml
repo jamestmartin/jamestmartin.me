@@ -1,13 +1,4 @@
 url: "https://jamestmartin.me"
 plugins:
-  - jekyll-assets
   - jekyll-last-modified-at
   - jekyll-sitemap
-
-assets:
-  destination: "/assets"
-  compression: true
-  css_compressor: scss
-  sources:
-    - assets/css
-    - assets/images
