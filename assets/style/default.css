@@ -1,7 +1,7 @@
 html {
     /*
      * The body does not span the entire viewport, so the background color must go in the `html`.
-     * This difference is not visible normally, but appears to be triggered by the Dark Reader plugin for Firefox.
+     * This difference in behavior is not visible normally, but appears to be triggered by the Dark Reader plugin for Firefox.
      */
     background-color: #fafafa;
 }
@@ -26,6 +26,12 @@ body {
      * I don't move over the entire 1.3 em gap, because there needs to be space between the icon and text.
      */
     margin-right: -1em;
+}
+
+/* My webcomic icons are favicon rips (for now) and look bad at large sizes. */
+.icon-list.low-res img {
+    width: 1em;
+    height: 1em;
 }
 
 .icon-list li {
