@@ -4,5 +4,10 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# LaTeX output files
+*.aux
+*.log
+*.out
+
 # Emacs backup files
 *~

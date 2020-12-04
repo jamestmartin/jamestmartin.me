@@ -1,0 +1,64 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage{enumitem}
+\usepackage[cm]{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+
+\author{James T. Martin}
+
+\begin{document}
+\section{\href{https://jamestmartin.me}{James T. Martin}, Software Developer}
+\begin{description}[noitemsep,labelwidth=2cm]
+\item[Email] \href{mailto:James\%20Martin<james@jtmar.me>}{james@jtmar.me}
+\item[Discord] jamestmartin\#7117
+\item[Phone] \href{tel:+1-206-331-1994}{(206) 331-1994}
+\item[GitHub] \href{https://github.com/jamestmartin}{jamestmartin}
+\item[Location] Renton, WA
+\end{description}
+
+\subsection{Experience}
+\subsubsection{\href{https://dad.gallery}{Do Art Daily}, Ruby on Rails developer \hfill 2020}
+\begin{itemize}
+\item Discovered multiple severe security bugs by creating an automated test suite.
+\item Fixed those bugs: site-wide code injection, change anyone's password, personal information leak.
+\item Designed and implemented secure cross-site authentication API and HAL+JSON REST API.
+\end{itemize}
+
+% Including the dates in the subsubsection title like this isn't necessarily semantic.
+% I ought to come up with a better way.
+\subsubsection{\href{https://proglangdesign.net}{Programming Language Design Community}, Administrator \& web developer \hfill 2018–2020}
+\begin{itemize}
+\item Led redesign of the website; used Jekyll to automate the generation of the community projects list.
+\item Co-founded the Discord sub-community; moderated it and \href{https://reddit.com/r/ProgrammingLanguages}{/r/ProgrammingLanguages}.
+\item Bridged the Discord and Freenode sub-communities via Matrix.
+\end{itemize}
+
+\subsubsection{Hazen Robotics Club, Java developer \hfill 2017–2019}
+\begin{itemize}
+\item Mentored programming at the district summer robotics camp for 90 hours.
+\item Taught club members how to use Java and Git.
+\item Collaborated to build robot controller programs for FIRST competitions.
+\end{itemize}
+
+\subsection{Skills}
+\begin{itemize}
+\item Languages: Java 8+, Rust, GHC Haskell, Agda, HTML5/XHTML, TypeScript
+\item Tools: Git, GitHub, formal verification, continuous integration, bug tracking, unit testing
+\item Administration: Debian GNU/Linux, Nginx, TLS deployment (incl. DNS CAA, HSTS, Let's Encrypt)
+\end{itemize}
+
+
+\subsection{Education}
+\subsubsection{Hazen High School \hfill 2015–2019}
+\begin{itemize}
+\item Member of marching, symphonic, and jazz bands; received Sousa award in 2019.
+\item Got high (4+) scores on 7 AP exams, including Computer Science (5) and Calculus AB (4).
+\item Learned shop skills (woodworking, welding) and received OSHA 10 certification.
+\end{itemize}
+\end{document}
