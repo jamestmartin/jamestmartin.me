@@ -9,18 +9,20 @@ html {
 body {
     margin: auto;
 
-    /** I love me some easily-readable text. */
+    /* I love me some easily-readable text. */
     max-width: 60ch;
-    font: 1.4rem/1.8em sans-serif;
+    /* experimenting with a smaller font */
+    /* font: 1.4rem/1.8em sans-serif; */
+    font: 21px/1.5em sans-serif;
 }
 
 .icon-list img {
-    width: 1.3em;
-    height: 1.3em;
+    width: 30px;
+    height: 30px;
 
     /* The icon should be located where the bullet would be. */
     position: relative;
-    left: -1.3em;
+    left: -30px;
     /*
      * The text doesn't know that the image isn't actually there, so it must be re-aligned with a negative margin.
      * I don't move over the entire 1.3 em gap, because there needs to be space between the icon and text.
@@ -30,8 +32,15 @@ body {
 
 /* My webcomic icons are favicon rips (for now) and look bad at large sizes. */
 .icon-list.low-res img {
-    width: 1em;
-    height: 1em;
+    width: 23px;
+    height: 23px;
+}
+
+.icon-list.high-res img {
+    width: 64px;
+    height: 64px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .icon-list li {
